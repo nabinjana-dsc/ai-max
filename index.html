@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Max</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ai Max</h1>
+        <div class="input-wrapper">
+            <input type="text" id="commandInput" onchange="interpretCommand()" placeholder="Enter a command...">
+            <!-- Clear input icon -->
+            <i class="fas fa-times clear-icon" onclick="clearInput()"></i>
+        </div>
+        <!-- Use a voice icon for the Voice Input button -->
+        <button onclick="startVoiceRecognition()"><i class="fas fa-microphone"></i> Voice Input</button>
+        <p id="output"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
